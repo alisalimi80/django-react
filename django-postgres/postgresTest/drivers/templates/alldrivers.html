@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    {% for d in alldrivers %}
+
+        <div class="mainalldrivers mw6 center pa3 sans-serif">
+
+            <h1 class="mb4">Driver {{d.id}}: {{ d.name | linebreaks }}</h1>
+
+            <header class="b mb2">License: {{ d.license }}</header>
+
+            {% for c in d.car_set.all %}
+            <h3>car model :{{c.model}}</h3>
+            {% endfor %}
+            
+        </div>
+    {% endfor %}
+
+
+{% endblock %}
