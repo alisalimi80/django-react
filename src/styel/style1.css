@@ -1,0 +1,20 @@
+.car{
+    border: 1px solid gray;
+    padding: 20px;
+}
+.text-input{
+    display: inline-block;
+    width: 250px;
+}
+.error{
+    display: inline-block;
+}
+.label{
+    display: inline-block;
+    width: 50px;
+}
+.container1{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
